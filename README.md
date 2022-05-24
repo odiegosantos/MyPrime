@@ -5,7 +5,7 @@
 </div>
 
 <h1 align="center">MyPrime</h1>
-![myprime](https://user-images.githubusercontent.com/87211192/170035392-3083ab4f-fecb-4c22-b17e-149a434d72e5.PNG)
+<img src="https://user-images.githubusercontent.com/87211192/170035392-3083ab4f-fecb-4c22-b17e-149a434d72e5.PNG" />
 
 <p align="center">
 
