@@ -1,0 +1,21 @@
+@media screen and (max-width:700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    background: linear-gradient(#fa000007, #00000059), url('../img/2001.jpg');
+    background-size: contain;
+    height: 100vh;
+  }
+
+  .title,
+  .description,
+  .logo {
+    display: none;
+  }
+  .items {
+    margin: 7rem 0;
+  }
+}
