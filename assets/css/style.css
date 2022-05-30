@@ -1,3 +1,4 @@
+/* ---------------------------------------- Reset ---------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,23 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
-body {
-  color: #fff;
-  background-color: #000;
+
+/* ---------------------------------------- Root ---------------------------------------- */
+:root {
+  --red: #970101;
+  --gold: #86641f;
+  --white: #fff;
+  --black: #000;
+  --linearGradient: linear-gradient(120deg, #a800003b, #00000059);
 }
 
+/* ---------------------------------------- Body ---------------------------------------- */
+body {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* ---------------------------------------- Display flex ---------------------------------------- */
 .flex-center {
   display: flex;
   align-items: center;
@@ -19,22 +32,26 @@ body {
   justify-content: center;
 }
 
-
+/* ---------------------------------------- Logo ---------------------------------------- */
 .logo {
-  color: #970101;
+  color: var(--red);
   font-size: 2.5rem;
   margin-left: .8rem;
   position: absolute;
 }
+
+/* ---------------------------------------- Navigation ---------------------------------------- */
 .navigation a {
   position: absolute;
   width: 100%;
   padding-right: 2rem;
   display: flex;
   justify-content: flex-end;
-  color: #970101;
+  color: var(--red);
   font-size: 1.5rem;
 }
+
+/* ---------------------------------------- Main ---------------------------------------- */
 .main {
   height: 100vh;
   margin-bottom: 5rem;
@@ -42,28 +59,31 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
   background-repeat: no-repeat;
-  background: linear-gradient(120deg, #a800003b, #00000059), url('../img/2001.jpg');
+  background: var(--linearGradient), url('../img/2001.jpg');
 }
 
 .main .title {
   font-size: 4rem;
-  color: #86641f;
+  color: var(--gold);
 }
 
+/* ---------------------------------------- Item ---------------------------------------- */
 .items img:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: ease 300ms;
 }
 
+/* ---------------------------------------- Footer ---------------------------------------- */
 footer a {
-  color: #fff;
+  color: var(--white);
   font-size: 1.2rem;
   margin-right: 1rem;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--white);
 }
 
-.credits {
+/* ---------------------------------------- Author ---------------------------------------- */
+.author {
   display: flex;
   align-items: flex-start;
 }
